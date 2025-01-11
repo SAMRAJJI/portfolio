@@ -1,11 +1,6 @@
-// script.js
-
-// Add interactivity or dynamic behaviors here
-
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Portfolio website loaded successfully!');
 
-    // Example: Smooth scroll for navigation links
     const links = document.querySelectorAll('nav ul li a');
 
     links.forEach(link => {
