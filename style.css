@@ -18,8 +18,8 @@ i{
     width: 100%;
     height: 100%;
     object-fit: cover; /* Ensures the video covers the entire area */
-    z-index: -1; /* Places the video behind the content */
-    opacity: 0.2; 
+    z-index: -3; /* Places the video behind the content */
+    opacity: 0.5; 
   }
   
   body {
@@ -30,6 +30,7 @@ i{
   }
 
 .container {
+    font-size: 20px;
     width: 90%;
     margin: 0 auto;
     overflow: hidden;
@@ -59,7 +60,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #00b3b3;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
 }
@@ -70,17 +71,19 @@ section {
 
 section h2 {
     text-align: center;
-    color: #00b3b3;
+    color:rgb(0, 0, 0);
     font-size: 28px;
     margin-bottom: 30px;
 }
 
 .project {
-    background: rgba(41, 43, 47, 0.9); /* Slightly transparent for better contrast with background */
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent for better contrast with background */
     padding: 20px;
     margin: 15px 0;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgb(18, 161, 228);
+    text-align: justify;
+
 }
 
 .project h3 {
@@ -100,8 +103,8 @@ footer {
 }
 
 a:hover {
-    color: #ffffff;
-    text-decoration: underline;
+    color: #0dcfff;
+    text-decoration:solid;
 }
 
 footer p {
@@ -138,6 +141,30 @@ footer p {
 }
 #contact div a{
     font-size: 50px;
+}
+
+.Certificate a{
+    color: black;
+    display: block;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent for better contrast with background */
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(18, 161, 228);
+
+}
+
+.Certificate a:hover{
+    color: #00b3b3;
+}
+
+#game{
+    text-decoration: none;
+    color: #000000;
+}
+#game a:hover{
+    color: #00ffff;
 }
 
 
