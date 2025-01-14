@@ -76,9 +76,11 @@ section h2 {
     margin-bottom: 30px;
 }
 
-.project {
+.aboutme {
     background: rgba(255, 255, 255, 0.9); /* Slightly transparent for better contrast with background */
     padding: 20px;
+    display: inline-flex;
+    border: 30px;
     margin: 15px 0;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgb(18, 161, 228);
@@ -86,11 +88,12 @@ section h2 {
 
 }
 
-.project h3 {
-    color: #00b3b3;
-    font-size: 24px;
-    margin-bottom: 15px;
+#projects{
+    
+    border-radius: 10px;
+    border: 20px;
 }
+
 
 footer {
     background: rgba(45, 47, 49, 0.8);
@@ -147,7 +150,7 @@ footer p {
     color: black;
     display: block;
     text-decoration: none;
-    background: rgba(255, 255, 255, 0.9); /* Slightly transparent for better contrast with background */
+    background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     margin: 15px 0;
     border-radius: 10px;
