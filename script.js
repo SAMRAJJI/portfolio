@@ -18,3 +18,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+const projectsContainer = document.querySelector(".projects");
+let scrollPosition = 0;
+const projectWidth = 220; // Includes width + margin of .project-box
+
+function scrollLeft() {
+    scrollPosition = Math.max(scrollPosition - projectWidth, 0);
+    projectsContainer.style.transform = `translateX(-${scrollPosition}px)`;
+}
+
+function scrollRight() {
+    const maxScroll = projectsContainer.scrollWidth - projectsContainer.clientWidth;
+    scrollPosition = Math.min(scrollPosition + projectWidth, maxScroll);
+    projectsContainer.style.transform = `translateX(-${scrollPosition}px)`;
+}

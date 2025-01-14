@@ -170,4 +170,21 @@ footer p {
     color: #00ffff;
 }
 
+.project-box{
+    border-radius: 10px;
+    padding: 10px;
+    display: inline;
+    border-color: #000000;
+    border: 2px solid black;
+   
+}
+
+.projects{
+    text-align: center;
+}
+.project-box:hover{
+    color: #00b3b3;
+    background-color: #000000;
+    cursor: pointer;
+}
 
