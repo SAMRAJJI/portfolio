@@ -22,7 +22,7 @@ i{
     opacity: 0.5; 
   }
   
-  body {
+body {
     margin: 0;
     padding: 0;
     overflow: hidden; /* Hides any overflow from the video */
@@ -87,13 +87,6 @@ section h2 {
     text-align: justify;
 
 }
-
-#projects{
-    
-    border-radius: 10px;
-    border: 20px;
-}
-
 
 footer {
     background: rgba(45, 47, 49, 0.8);
@@ -162,29 +155,32 @@ footer p {
     color: #00b3b3;
 }
 
-#game{
-    text-decoration: none;
-    color: #000000;
-}
-#game a:hover{
-    color: #00ffff;
+section #projects{
+    overflow: hidden;
+    display: flex;
+    margin: 30px;
+    padding: 20px;
+    z-index: 3;
 }
 
 .project-box{
-    border-radius: 10px;
-    padding: 10px;
-    display: inline;
-    border-color: #000000;
-    border: 2px solid black;
-   
+    display: flex;
+    margin-left: 1px;
+    border-radius: 15px;
+    border: solid 2px black;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
 }
-
-.projects{
-    text-align: center;
+.portfolio-container{
+    display: flex;
+    margin-left: 70px;
+    padding-left: 10px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden;
+    padding: 1px;
+    gap: 10px;
+    width: 100%;
 }
-.project-box:hover{
-    color: #00b3b3;
-    background-color: #000000;
-    cursor: pointer;
-}
-
