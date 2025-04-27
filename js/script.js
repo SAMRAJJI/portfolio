@@ -34,3 +34,16 @@ function scrollRight() {
     scrollPosition = Math.min(scrollPosition + projectWidth, maxScroll);
     projectsContainer.style.transform = `translateX(-${scrollPosition}px)`;
 }
+
+
+function toggleChat() {
+    var chatContainer = document.getElementById('chat-container');
+    if (chatContainer.style.display === "none" || chatContainer.style.display === "") {
+        chatContainer.style.display = "flex";
+    } else {
+        chatContainer.style.display = "none";
+    }
+}
+
+// Your existing sendMessage and appendMessage functions here
+

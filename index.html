@@ -83,7 +83,21 @@
             <a href="https://www.linkedin.com/in/samrajji-natarajan-19166720b/" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
     </section>
+    <!-- Chatbot Toggle Button -->
+    <button id="chatbot-toggle" class="btn btn-primary rounded-circle" onclick="toggleChat()">
+        💬
+    </button>
 
+    <!-- Chatbot Container (Initially Hidden) -->
+    <div id="chat-container" class="shadow">
+    <div id="chat-box"></div>
+    <div class="input-group mt-2">
+        <input type="text" id="user-input" class="form-control" placeholder="Type your message...">
+        <button class="btn btn-success" onclick="sendMessage()">Send</button>
+    </div>
+    </div>
+
+  
 
     <footer>
         <div class="container">
