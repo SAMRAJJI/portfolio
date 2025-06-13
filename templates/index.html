@@ -16,10 +16,11 @@
     </script>
 </head>
 <body>
-    <video autoplay loop muted playsinline id="background-video">
-        <source src="bgclip.mp4" type="video/mp4">
+    <video autoplay muted loop id="bg-video">
+        <source src="{{ url_for('static', filename='videos/bgclip.mp4') }}" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+
     <header>
         <div class="container">
             <h1>Samrajji N - AI/ML Engineer</h1>
@@ -86,8 +87,7 @@
     <button id="chatbot-toggle" class="btn btn-primary rounded-circle" onclick="toggleChat()">
         💬
     </button>
-
-    <!-- Chatbot Container (Initially Hidden) -->
+    <!-- Chatbot Container -->
     <div id="chat-container" class="shadow">
     <div id="chat-box"></div>
     <div class="input-group mt-2">
